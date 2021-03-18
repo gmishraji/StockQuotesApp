@@ -16,12 +16,12 @@ Thank you for checking out "OUR" code!  This is a public repository under the Ap
 
 from command line...
 ```bash
-git clone https://github.com/grizzlypeaksoftware/Flask-Stock-Widget
+git clone https://github.com/gmishraji/StockQuotesApp.git
 ```
 
 ### Installing Python and Flask
 
-This guide assumes that you have at least a basic understanding of Python programming and how to perform general OS level tasks. You will need a code editor to create this application. I used Visual Studio code.
+This guide assumes that you have at least a basic understanding of Python programming and how to perform general OS level tasks. You will need a code editor to create this application. I used PyCharm.
 
 If you do not already have Python installed, you should install it. The installation for your operating system can be found at the following location. [https://www.python.org/about/gettingstarted/](https://www.python.org/about/gettingstarted/ "Python Getting Started Guide")
 
@@ -167,8 +167,6 @@ Flask comes with a simple template renderer called Jinja. We will use it to pull
 
 In order to do this you will need to create a folder in your project called "templates" because Jinja always looks in the templates folder. If you look in that folder you will find the HTML template. We're using a bunch of libraries in this HTML to make things easy so let's take a look.
 
-You can find the HTML for this template at the following location. [https://github.com/grizzlypeaksoftware/Flask-Stock-Widget/blob/master/templates/homepage.html](https://github.com/grizzlypeaksoftware/Flask-Stock-Widget/blob/master/templates/homepage.html)
-
 First you will see that we're pulling in the CSS for Bootstrap 4 via CDN. We are also using some of the Jinja markup in this template to pull in our static css file that is found in `static/css`.
 
 ```html
@@ -219,7 +217,6 @@ def home():
 
 If you run the application again from the command line and then navigate to http://localhost:5000/ you should now see a website that looks roughly like this..
 
-![Partially Completed Stock Market Widget](//images.ctfassets.net/j3qbf0mggam8/1Ku5yomC3P9qksMRJWQXsK/2589f2773a9bb2be537efbf4a5a8baf4/stock_widget_partial.png)
 
 ### Pulling the API Content with AJAX
 
@@ -339,27 +336,4 @@ Site.prototype.RenderChart = function(data, quote){
 };
 ```
 
-So, putting this all together, we should now have a stock market widget all complete that will pull all of the data and then draw the Stock Market widget on the page. We have added a little input form so that you can change the symbol by typing in a new symbol, like TSLA, MSFT, or VTSAX in order to show the information that that particular type of investment.
-
-Once it's completed the finished website should look roughly like this...
-
-![Create a Python and Flask based stock quote widget](//images.ctfassets.net/j3qbf0mggam8/3k2i2QH0adGADRqXEdEfhL/62f34eef2bb589f701cfb88f522501f2/stock_widget.png)
-
-### Conclusion
-
-In this article we used Python and Flask to make a simple stock market API that can pull data form Yahoo Finance and then apply it to create a simple website that shows a stock market chart.
-
-I hope that you enjoyed this tutorial!  
-
-If you are interested in reading any of our other programming articles, some good ones to check out are...
-
-Building an API Gateway with NGINX
-[https://www.grizzlypeaksoftware.com/articles?id=4vlfDp2ZanpAh3bSuUzPeZ](https://www.grizzlypeaksoftware.com/articles?id=4vlfDp2ZanpAh3bSuUzPeZ)
-
-Build a simple Node.js OAuth server with JWT
-[https://www.grizzlypeaksoftware.com/articles?id=6G3prVhXnUeSYUEqEoCqq2](https://www.grizzlypeaksoftware.com/articles?id=6G3prVhXnUeSYUEqEoCqq2)
-
-Create a secure web server in Node.js
-[https://www.grizzlypeaksoftware.com/articles?id=JDcsPW2raSic6oc6MCYaM](https://www.grizzlypeaksoftware.com/articles?id=JDcsPW2raSic6oc6MCYaM)
-# StockQuotesApp
 # StockQuotesApp
